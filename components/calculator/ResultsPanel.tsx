@@ -63,7 +63,10 @@ export default function ResultsPanel({
               key="results"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.6,
+                ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+              }}
               className="w-full grid grid-cols-1 gap-6"
             >
               <div className="border border-border p-6 rounded-lg bg-foreground/[0.03]">

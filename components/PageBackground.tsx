@@ -8,7 +8,10 @@ export default function PageBackground() {
       <motion.div
         initial={{ scale: 1.15 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 3, ease: [0.16, 1, 0.3, 1] }}
+        transition={{
+          duration: 3,
+          ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+        }}
         className="absolute left-[-15%] top-1/2 -translate-y-1/2 w-[90vw] h-[110vh] opacity-[0.3] dark:opacity-[0.4]"
       >
         <motion.img

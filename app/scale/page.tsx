@@ -119,7 +119,10 @@ export default function ScalePage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{
+              duration: 0.8,
+              ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+            }}
             className="mb-16"
           >
             <span className="text-xs tracking-[0.2em] text-muted uppercase font-sans">
@@ -306,7 +309,15 @@ export default function ScalePage() {
                     key="results"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                    transition={{
+                      duration: 0.6,
+                      ease: [0.16, 1, 0.3, 1] as [
+                        number,
+                        number,
+                        number,
+                        number,
+                      ],
+                    }}
                     className="flex flex-col gap-6"
                   >
                     <div className="grid grid-cols-3 gap-3">

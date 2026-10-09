@@ -40,7 +40,10 @@ export default function ThemeToggle() {
             initial={{ rotate: -120, scale: 0, opacity: 0 }}
             animate={{ rotate: 0, scale: 1, opacity: 1 }}
             exit={{ rotate: 120, scale: 0, opacity: 0 }}
-            transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+            transition={{
+              duration: 0.45,
+              ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+            }}
             className="absolute flex items-center justify-center"
           >
             <MoonIcon />
@@ -51,7 +54,10 @@ export default function ThemeToggle() {
             initial={{ rotate: 120, scale: 0, opacity: 0 }}
             animate={{ rotate: 0, scale: 1, opacity: 1 }}
             exit={{ rotate: -120, scale: 0, opacity: 0 }}
-            transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+            transition={{
+              duration: 0.45,
+              ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+            }}
             className="absolute flex items-center justify-center"
           >
             <SunIcon />

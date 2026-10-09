@@ -192,7 +192,10 @@ function ResultBar({
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: `${widthA}%` }}
-              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 1.2,
+                ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+              }}
               className="h-full bg-gradient-to-r from-rose-500/80 to-rose-400 flex items-center px-3"
             >
               {widthA > 15 && (
@@ -218,7 +221,7 @@ function ResultBar({
               transition={{
                 duration: 1.2,
                 delay: 0.15,
-                ease: [0.16, 1, 0.3, 1],
+                ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
               }}
               className="h-full bg-gradient-to-r from-emerald-500/80 to-accent flex items-center px-3"
             >
@@ -278,7 +281,10 @@ export default function ComparePage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{
+              duration: 0.8,
+              ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+            }}
             className="mb-16"
           >
             <span className="text-xs tracking-[0.2em] text-muted uppercase font-sans">
@@ -403,7 +409,10 @@ export default function ComparePage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.8,
+                ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+              }}
               className="border border-border rounded-lg p-8 md:p-12 bg-foreground/[0.04] flex flex-col gap-12"
             >
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-border">

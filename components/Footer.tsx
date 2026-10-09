@@ -30,7 +30,10 @@ export default function Footer() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{
+              duration: 0.8,
+              ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+            }}
           >
             <h3 className="font-serif text-4xl md:text-5xl leading-tight mb-4">
               Built to make AI <br />
@@ -46,7 +49,11 @@ export default function Footer() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+            transition={{
+              duration: 0.8,
+              delay: 0.15,
+              ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+            }}
             className="flex flex-col gap-4 md:items-end"
           >
             <span className="text-xs tracking-[0.2em] text-foreground/40 uppercase font-sans mb-2">

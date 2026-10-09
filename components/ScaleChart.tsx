@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
 import {
   ResponsiveContainer,
   LineChart,
@@ -93,7 +93,10 @@ export default function ScaleChart({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      transition={{
+        duration: 0.6,
+        ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+      }}
       className="border border-border rounded-lg p-8 bg-foreground/[0.04] flex flex-col gap-6"
     >
       <div className="flex items-center justify-between flex-wrap gap-4">
@@ -202,8 +205,8 @@ export default function ScaleChart({
               labelFormatter={(value) =>
                 `${Number(value).toLocaleString("en-IN")} req/day`
               }
-              formatter={(value: number) => [
-                formatValue(value),
+              formatter={(value) => [
+                formatValue(Number(value) || 0),
                 currentMetric.label,
               ]}
             />
