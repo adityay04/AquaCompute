@@ -20,27 +20,27 @@ AquaCompute was built to change that. Every figure is traceable to a source, tie
 
 ## Features
 
-### 🧮 Calculator
+### Calculator
 
 Enter a token count, pick from 400+ real models (via [OpenRouter](https://openrouter.ai)), and see estimated water (liters), energy (kWh), and carbon (gCO₂).
 
-### ⚖️ Compare
+### Compare
 
 Side-by-side model comparison with animated bars. The same 50,000 tokens on Claude 3 Opus vs. Gemini 2.5 Pro shows a **130× difference in water consumption**.
 
-### 📈 Scale Simulator
+### Scale Simulator
 
 Input your app's traffic assumptions (requests/day, avg input/output tokens). Get daily, monthly, and yearly projections. Relatable equivalents localized to 10 countries — Indian households get buckets and 1.5-ton AC hours, US users get NY→LA flights, etc.
 
-### 📉 Scaling Curve
+### Scaling Curve
 
 Log-log chart showing how environmental impact scales linearly with request volume. There are no diminishing returns. Every additional user costs the same water, forever.
 
-### 🎛️ What-If Simulator
+### What-If Simulator
 
 Drag three sliders — PUE (cooling efficiency), WUE (water per kWh), and grid carbon intensity — and watch the numbers move. Same model, same tokens, different data center: **up to 22× swing in water impact**.
 
-### 📖 Methodology
+### Methodology
 
 Full transparency page exposing the formula, per-model data table, confidence tiers, and an honest "What We Don't Measure" section.
 
